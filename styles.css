@@ -36,12 +36,14 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   gap: 15px;
+  position: relative;
 }
 
 .menu_horizontal li {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 .menu_horizontal a {
@@ -55,6 +57,36 @@ h1, h2, h3 {
 
 .menu_horizontal a:hover {
   color: #1AB2E5;
+}
+
+.menu_vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  background-color: rgb(113, 112, 163);
+  top: 100%;
+  left: 0;
+  border-radius: 15px;
+  padding: 15px 20px;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.menu_vertical li {
+  padding: 10px 0;
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+    padding: 20px 0;
+    border-radius: 15px;
+}
+
+.menu_vertical li a {
+  color: #0D171C;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
 }
 
 .btn {
