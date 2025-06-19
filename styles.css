@@ -1,0 +1,117 @@
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Manrope:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 10;
+  flex-wrap: nowrap;
+}
+
+.top-header .logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.menu_horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu_horizontal li {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.menu_horizontal a {
+  text-decoration: none;
+  color: #0D171C;
+  font-family: 'Manrope', sans-serif;
+  padding: 5px 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu_horizontal a:hover {
+  color: #1AB2E5;
+}
+
+.btn {
+  background-color: #1AB2E5;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #159fd3;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 815px) {
+  .menu_horizontal {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    background-color: #d1d0d0;
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 99;
+  }
+
+  .menu_horizontal.active {
+    display: flex;
+  }
+
+  .menu_horizontal li {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+
+}
+
