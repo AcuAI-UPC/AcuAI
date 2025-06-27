@@ -1,10 +1,10 @@
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>AcuAI</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
       </button>
 
       <ul class="menu_horizontal">
-        <li>
+        <li class="menu_item">
           <li><a href="#">Inicio</a>
             <ul class="menu_vertical">
               <li><a href="#">Nosotros</a></li>
@@ -40,15 +40,97 @@
           <h1>CONTROLA TU CONSUMO DE AGUA CON ACUAIA</h1>
           <p>AcuAI te ayuda a monitorear tu consumo de agua en tiempo real, detectar fugas y ahorrar en tu factura. Regístrate hoy y comienza a gestionar tu agua de forma inteligente.</p>
           <div class="botones">
-            <a href="#" class="btn azul">Registrarse</a>
-            <a href="#" class="btn blanco">Más información</a>
+            <a href="#" class="btn-azul">Registrarse</a>
+            <a href="#" class="btn-blanco">Más información</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Características -->
+    <section class="caracteristicas">
+        <div class="caracteristicas-container">
+            <h2>Características</h2>
+            <p>AcuAI ofrece una variedad de funciones para ayudarte a gestionar tu consumo de agua de forma eficiente.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="/assets/icon/gota.png" alt="Ícono de gota de agua" />
+                    <h3>Monitoreo en tiempo real</h3>
+                    <p>Visualiza tu consumo de agua por hora, día y mes. Recibe notificaciones instantáneas sobre cualquier cambio inusual.</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/icon/alerta.png" alt="Ícono de alerta" />
+                    <h3>Alertas de Fugas</h3>
+                    <p>Detecta fugas de agua de forma temprana y evita sorpresas en tu factura. Recibe alertas detalladas sobre la ubicación y gravedad de la fuga.</p>
+                </div>
+                <div class="card">
+                    <img src="/assets/icon/moneda.png" alt="Ícono de moneda" />
+                    <h3>Consejos para el ahorro</h3>
+                    <p>Accede a consejos personalizados para reducir tu consumo de agua y ahorrar dinero. Aprende hábitos sostenibles para el uso responsable del agua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!--contacto-->
+    <section class="contacto" id="contacto">
+        <div class="contacto-container">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o sugerencias? Completa el formulario y nos pondremos en contacto contigo.</p>
+            <form class="formulario-contacto" id="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  />
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo"  />
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" ></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Monitoreo</a></li>
+                        <li><a href="#">Alertas</a></li>
+                        <li><a href="#">Recomendaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Nosotros</h3>
+                    <ul>
+                        <li><a href="#">Proyecto</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-texto">
+                    <h3>AcuAI</h3>
+                    <p>AcuAI es un asistente inteligente que te ayuda a monitorear y reducir tu consumo de agua en casa.</p>
+                </div>
+                <div class="footer-column social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/IamJc2" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <p class="footer-copyright">AcuAI © 2025</p>
+        </div>
+    </footer>
+
+
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>
