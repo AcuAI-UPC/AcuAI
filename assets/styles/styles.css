@@ -312,7 +312,7 @@ h1, h2, h3 {
 /*contacto*/
 .contacto {
   padding: 60px 20px;
-  background-color: #f1f5f9;
+  background-color: #ffffff;
 }
 
 .contacto-container {
@@ -364,11 +364,79 @@ button[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button[type="submit"]:hover {
   background-color: #1e6bc1;
 }
+.contacto-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.contacto-imagen {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contacto-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.formulario-contacto {
+  flex: 1;
+  min-width: 300px;
+}
+@media (max-width: 768px) {
+  .contacto-flex {
+    flex-direction: column;
+  }
+}
+
+/*preguntas*/
+.preguntas {
+  background-color: #f4f9fc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.preguntas-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.preguntas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0D171C;
+}
+
+.preguntas-item {
+  text-align: left;
+  margin-bottom: 25px;
+  padding: 20px 20px 30px 40px;
+  border-left: 4px solid #1AB2E5;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.preguntas-item:hover {
+  background-color: #d1d0d0;
+  transform: translateY(-5px);
+}
+.preguntas-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #0D171C;
+}
+.preguntas-item p {
+  margin: 0;
+  color: #555;
+}
 
 /*Footer*/
 footer {

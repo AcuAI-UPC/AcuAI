@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Por favor completa todos los campos antes de enviar el formulario.");
       return;
     }
-    alert("Formulario enviado correctamente ✅");
+    alert("Formulario enviado correctamente");
     form.reset();
   });
 });
