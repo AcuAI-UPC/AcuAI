@@ -25,10 +25,10 @@
               <li><a href="#">¿Qué es AcuAI?</a></li>  
             </ul>
           </li>
-          <li><a href="#">Características</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><button class="btn">Iniciar Sesión</button></li>
-          <li><button class="btn">Registrarse</button></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="pages/login.html" class="btn">Iniciar Sesión</a></li>
+          <li><a href="pages/register.html" class="btn">Registrarse</a></li>
       </ul>
     </nav>
 
@@ -40,7 +40,7 @@
           <h1>CONTROLA TU CONSUMO DE AGUA CON ACUAIA</h1>
           <p>AcuAI te ayuda a monitorear tu consumo de agua en tiempo real, detectar fugas y ahorrar en tu factura. Regístrate hoy y comienza a gestionar tu agua de forma inteligente.</p>
           <div class="botones">
-            <a href="#" class="btn-azul">Registrarse</a>
+            <a href="./pages/register.html" class="btn-azul">Registrarse</a>
             <a href="#" class="btn-blanco">Más información</a>
           </div>
         </div>
@@ -48,7 +48,7 @@
     </section>
 
     <!-- Características -->
-    <section class="caracteristicas">
+    <section class="caracteristicas" id="caracteristicas">
         <div class="caracteristicas-container">
             <h2>Características</h2>
             <p>AcuAI ofrece una variedad de funciones para ayudarte a gestionar tu consumo de agua de forma eficiente.</p>
@@ -72,8 +72,46 @@
         </div>
     </section>
 
+    <!-- Recursos -->
+    <!-- Recursos -->
+    <section class="recursos" id="recursos">
+        <div class="recursos-container">
+            <h2>Recursos</h2>
+            <p>Aprende cómo cuidar el agua en diferentes espacios del hogar.</p>
+
+            <div class="recursos-grid">
+                <div class="categoria">
+                    <h3>Baño</h3>
+                    <p>Usa aireadores en los grifos y repara fugas rápidamente.</p>
+                    <img src="/images/baño.png" alt="Consejos para el baño">
+                    <iframe src="https://www.youtube.com/embed/Nf2lmihGduE" allowfullscreen></iframe>
+                </div>
+
+                <div class="categoria">
+                    <h3>Cocina</h3>
+                    <p>No dejes correr el agua al lavar los platos, mejor usa un recipiente.</p>
+                    <img src="/images/cocina.png" alt="Consejos para la cocina">
+                    <iframe src="https://www.youtube.com/embed/QrsA5ioHXs8?si=b_A0qq4SBTw9uBDi" allowfullscreen></iframe>
+                </div>
+
+                <div class="categoria">
+                    <h3>Jardín</h3>
+                    <p>Riega por las mañanas o en la noche para evitar evaporación.</p>
+                    <img src="/images/jardin.png" alt="Consejos para el jardín">
+                    <iframe src="https://www.youtube.com/embed/O_1O1_EAr1I" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="compartir">
+                <p>¿Te gustó esta información? ¡Compártela!</p>
+                <a href="https://x.com/" target="_blank" class="btn-compartir"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                <a href="https://www.facebook.com/" target="_blank" class="btn-compartir"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+            </div>
+        </div>
+    </section>
+
     <!--Preguntas-->
-    <section class="preguntas" id="perguntas">
+    <section class="preguntas" id="preguntas">
         <div class="preguntas-container">
             <h2>Preguntas Frecuentes</h2>
 
@@ -138,7 +176,7 @@
                     <ul>
                         <li><a href="#">Proyecto</a></li>
                         <li><a href="#">Equipo</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-column footer-texto">

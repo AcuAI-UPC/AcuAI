@@ -1,6 +1,11 @@
 const btn = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu_horizontal");
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
+
 btn.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
