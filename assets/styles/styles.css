@@ -608,7 +608,7 @@ footer {
   font-size: 0.85rem;
   color: #ccc;
 }
-
+/*login*/
 .login{
   text-align: center;
   margin: auto;
@@ -648,7 +648,129 @@ footer {
 .recordar{
   padding-top: 30px;
 }
+/*register*/
+.register {
+  text-align: center;
+  padding: 40px 0 20px; /* 40 arriba, 0 lados, 20 abajo */
+  font-size: 1rem;
+}
 
+.register .container {
+  max-width: 400px;
+  margin: 0 auto;
+}
 
+.register .titulo {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px; /* Menor separación con el formulario */
+}
 
+.formulario-register {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
+.register .campo {
+  text-align: left;
+}
+
+.register .campo label {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.register .campo input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.register .acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.register .inicio {
+  background-color: #1AB2E5;
+  color: #0D171C;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.register .inicio:hover {
+  background-color: #159fd3;
+}
+
+.register .recordar {
+  color: #1AB2E5;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/*olvide*/
+.olvide {
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 1rem;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.formulario-olvide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.campo {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 300px;
+  text-align: left;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-enviar {
+  background-color: #1AB2E5;
+  color: #0D171C;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #159fd3;
+}
