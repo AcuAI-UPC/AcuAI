@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
 
       setTimeout(() => {
-        window.location.href = "../pages/login.html";
+        window.location.href = "../../pages/login.html";
       }, 1000);
     });
   }
@@ -66,7 +66,7 @@ document.getElementById("formulario-olvide").addEventListener("submit", function
     alert("Hemos enviado un enlace de recuperación a tu correo.");
     this.reset();
     setTimeout(() => {
-      window.location.href = "../pages/login.html";
+      window.location.href = "../../pages/login.html";
     }, 1000);
 });
 
