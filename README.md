@@ -8,8 +8,6 @@ fomentando el ahorro y la sostenibilidad a través de alertas y reportes.
 ## Autores
 
 - José Daniel Cueto Mendez
-- Fabricio Grimaldo De La Cruz Jimenez
-- Dafne Ivonne Cabrera Beizaga
 
 ## Público Objetivo
 
